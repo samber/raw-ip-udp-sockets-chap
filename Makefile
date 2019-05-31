@@ -1,7 +1,7 @@
 
 NAME = chap
 
-SRC = socket.c lvl4_udp.c lvl3_ipv4.c checksum.c main.c datagram.c utils.c lvl4.c protocol.c auth.c sha256.c
+SRC = src/socket.c src/lvl4_udp.c src/lvl3_ipv4.c src/checksum.c src/main.c src/datagram.c src/utils.c src/lvl4.c src/protocol.c src/auth.c src/sha256.c
 OBJ = $(SRC:.c=.o)
 
 CFLAGS = -W -Wall -Werror -Wextra -I ./include -lssl -lcrypto
